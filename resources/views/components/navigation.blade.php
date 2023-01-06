@@ -1,9 +1,9 @@
 <x-splade-data default="{ open: false }">
-    <nav class="bg-white border-b border-gray-100">
+    <nav class="">
         <!-- Primary Navigation Menu -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
-                <div class="flex">
+                <div class="flex w-full justify-between">
                     <!-- Logo -->
                     <div class="shrink-0 flex items-center">
                         <a href="{{ route('home') }}">
@@ -17,8 +17,20 @@
                             {{ __('Home') }}
                         </x-nav-link>
 
-                        <x-nav-link href="{{ route('docs') }}" :active="request()->routeIs('docs')">
-                            {{ __('Documentation') }}
+                        <x-nav-link href="{{ route('about') }}" :active="request()->routeIs('about')">
+                            {{ __('About Me') }}
+                        </x-nav-link>
+
+                        <x-nav-link href="{{ route('skills') }}" :active="request()->routeIs('skills')">
+                            {{ __('Skills') }}
+                        </x-nav-link>
+
+                        <x-nav-link href="{{ route('sandbox') }}" :active="request()->routeIs('sandbox')">
+                            {{ __('Sandbox') }}
+                        </x-nav-link>
+
+                        <x-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
+                            {{ __('Contact') }}
                         </x-nav-link>
                     </div>
                 </div>
@@ -42,8 +54,20 @@
                     {{ __('Home') }}
                 </x-responsive-nav-link>
 
-                <x-responsive-nav-link href="{{ route('docs') }}" :active="request()->routeIs('docs')">
-                    {{ __('Documentation') }}
+                <x-responsive-nav-link href="{{ route('about') }}" :active="request()->routeIs('about')">
+                    {{ __('About Me') }}
+                </x-responsive-nav-link>
+
+                <x-responsive-nav-link href="{{ route('skills') }}" :active="request()->routeIs('skills')">
+                    {{ __('Skills') }}
+                </x-responsive-nav-link>
+
+                <x-responsive-nav-link href="{{ route('sandbox') }}" :active="request()->routeIs('sandbox')">
+                    {{ __('Sandbox') }}
+                </x-responsive-nav-link>
+
+                <x-responsive-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
+                    {{ __('Contact') }}
                 </x-responsive-nav-link>
             </div>
         </div>
