@@ -1,0 +1,1 @@
+<span class="text-primary font-cursive text-2xl">placiu.dev</span>

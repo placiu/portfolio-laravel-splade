@@ -7,7 +7,7 @@
                     <!-- Logo -->
                     <div class="shrink-0 flex items-center">
                         <a href="{{ route('home') }}">
-                            <x-application-mark class="block h-9 w-auto" />
+                            <x-logo class="block h-9 w-auto" />
                         </a>
                     </div>
 
