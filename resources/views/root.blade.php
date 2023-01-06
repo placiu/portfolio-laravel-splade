@@ -13,7 +13,7 @@
         @spladeHead
         @vite('resources/js/app.js')
     </head>
-    <body class="font-sans antialiased bg-dark">
+    <body class="font-sans antialiased bg-dark text-primary">
         @splade
     </body>
 </html>
