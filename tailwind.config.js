@@ -11,7 +11,13 @@ module.exports = {
     ],
 
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                'sans': ['Inter', 'sans-serif'],
+                'cursive': ['Lobster', 'cursive'],
+                'mono': ['Fira Code', 'monospace'],
+            },
+        },
     },
 
     plugins: [
