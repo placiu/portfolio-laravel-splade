@@ -17,6 +17,13 @@ module.exports = {
                 'cursive': ['Lobster', 'cursive'],
                 'mono': ['Fira Code', 'monospace'],
             },
+            colors: {
+                'dark': '#061A23',
+                'darker': '#06373A',
+                'primary': '#CCD6F6',
+                'secondary': '#8892AF',
+                'accent': '#159947',
+            },
         },
     },
 
