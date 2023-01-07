@@ -1,53 +1,49 @@
 <x-splade-data default="{ open: false }">
-    <nav class="">
+    <nav class="container relative flex flex-col grow mx-auto px-4 md:px-8 lg:px-12">
         <!-- Primary Navigation Menu -->
-        <div class="max-w-7xl mx-auto">
-            <div class="flex justify-between h-16">
-                <div class="flex w-full justify-between">
-                    <!-- Logo -->
-                    <div class="shrink-0 flex items-center">
-                        <a href="{{ route('home') }}">
-                            <x-logo class="block h-9 w-auto" />
-                        </a>
-                    </div>
+        <div class="flex w-full justify-between h-16">
+            <!-- Logo -->
+            <div class="shrink-0 flex items-center">
+                <a href="{{ route('home') }}">
+                    <x-logo class="block h-9 w-auto" />
+                </a>
+            </div>
 
-                    <!-- Navigation Links -->
-                    <div class="hidden space-x-4 sm:-my-px sm:ml-10 sm:flex">
-                        <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
-                            {{ __('Home') }}
-                        </x-nav-link>
+            <!-- Navigation Links -->
+            <div class="hidden space-x-4 sm:-my-px sm:ml-10 sm:flex">
+                <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+                    {{ __('Home') }}
+                </x-nav-link>
 
-                        <x-nav-link href="{{ route('about') }}" :active="request()->routeIs('about')">
-                            {{ __('About Me') }}
-                        </x-nav-link>
+                <x-nav-link href="{{ route('about') }}" :active="request()->routeIs('about')">
+                    {{ __('About Me') }}
+                </x-nav-link>
 
-                        <x-nav-link href="{{ route('skills') }}" :active="request()->routeIs('skills')">
-                            {{ __('Skills') }}
-                        </x-nav-link>
+                <x-nav-link href="{{ route('skills') }}" :active="request()->routeIs('skills')">
+                    {{ __('Skills') }}
+                </x-nav-link>
 
-                        <x-nav-link href="{{ route('sandbox') }}" :active="request()->routeIs('sandbox')">
-                            {{ __('Sandbox') }}
-                        </x-nav-link>
+                <x-nav-link href="{{ route('sandbox') }}" :active="request()->routeIs('sandbox')">
+                    {{ __('Sandbox') }}
+                </x-nav-link>
 
-                        <x-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
-                            {{ __('Contact') }}
-                        </x-nav-link>
-                    </div>
-                </div>
+                <x-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
+                    {{ __('Contact') }}
+                </x-nav-link>
+            </div>
 
-                <!-- Hamburger -->
-                <div class="-mr-2 flex items-center sm:hidden">
-                    <button @click="data.open = ! data.open" class="inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-primary hover:bg-darker focus:outline-none focus:bg-darker focus:primary transition">
-                        <x-coolicon-hamburger v-bind:class="{'hidden': data.open, 'inline-flex': ! data.open }" class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" />
-                        <x-coolicon-close-big v-bind:class="{'hidden': ! data.open, 'inline-flex': data.open }" class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" />
-                    </button>
-                </div>
+            <!-- Hamburger -->
+            <div class="-mr-2 flex items-center sm:hidden">
+                <button @click="data.open = ! data.open" class="inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-primary hover:bg-darker focus:outline-none focus:bg-darker focus:primary transition">
+                    <x-coolicon-hamburger v-bind:class="{'hidden': data.open, 'inline-flex': ! data.open }" class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" />
+                    <x-coolicon-close-big v-bind:class="{'hidden': ! data.open, 'inline-flex': data.open }" class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" />
+                </button>
             </div>
         </div>
 
         <!-- Responsive Navigation Menu -->
-        <div v-bind:class="{'block': data.open, 'hidden': ! data.open }" class="sm:hidden">
-            <div class="flex flex-col justify-center pt-2 pb-3 space-y-1">
+        <div v-bind:class="{'block': data.open, 'hidden': ! data.open }" class="sm:hidden absolute top-16 right-0 w-full h-full z-10">
+            <div class="flex flex-col justify-center pt-2 pb-10 space-y-1 bg-dark border-b-4 border-accent">
                 <x-responsive-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
                     {{ __('Home') }}
                 </x-responsive-nav-link>

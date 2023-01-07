@@ -8,9 +8,9 @@ $activeClasses = ($active ?? false)
 @endphp
 
 <Link {{ $attributes->merge(['class' => 'flex justify-center space-x-2 py-2 text-base font-mono text-white']) }}>
-    <span class="text-accent">{</span>
-    <span {{ $attributes->merge(['class' => $activeClasses]) }}>
+    <span class="hidden md:visible text-accent">{</span>
+    <span class="text-2xl md:text-base" {{ $attributes->merge(['class' => $activeClasses]) }}>
         {{ $slot }}
     </span>
-    <span class="text-accent">}</span>
+    <span class="hidden md:visible text-accent">}</span>
 </Link>
