@@ -1,13 +1,6 @@
 <x-layout>
     <div class="flex flex-col w-full h-full justify-center space-y-14">
-        <div class="font-extrabold">
-            <span class="text-4xl text-primary">
-                About
-            </span>
-            <span class="text-4xl text-accent">
-                Me. 
-            </span>
-        </div>
+        <x-header text="About Me"/>
         <div class="font-sans">
             <div class="flex flex-col space-y-6 text-secondary leading-8 md:w-3/4 italic text-sm md:text-base">
                 <p>My name is Paweł and my passion is web development. I love working and discovering new tools and technologies. I’m 38, living near Wrocław, Poland.</p>

@@ -1,13 +1,6 @@
 <x-layout>
     <div class="flex flex-col w-full h-full space-y-10">
-        <div class="font-extrabold">
-            <span class="text-4xl text-primary">
-                Get
-            </span>
-            <span class="text-4xl text-accent">
-                In Touch. 
-            </span>
-        </div>
+        <x-header text="Get In Touch"/>
         <div class="">
             <div class="flex flex-col space-y-6 text-secondary w-10/12 md:w-3/4 leading-8 italic text-sm ">
                 <p>Use the form below or email me directly at <a href="mailto:pawel@platek.dev" class="text-accent">pawel@platek.dev</a></p>
