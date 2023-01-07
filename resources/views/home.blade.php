@@ -1,6 +1,6 @@
 <x-layout>
     <x-content>
-        <div class="flex flex-col space-y-4 font-sans font-extrabold">
+        <div class="flex flex-col gap-4 font-extrabold">
             <span class="text-6xl md:text-7xl">
                 Paweł Płatek.
             </span>
@@ -8,12 +8,10 @@
                 I build things with PHP.
             </span>
         </div>
-        <div class="flex font-sans">
-            <span class="text-md md:text-base text-secondary md:w-3/4 leading-8 italic">
-                I'm a backend developer with over 4 years of experience in building and managing PHP applications using Magento, WordPress, Symfony and Laravel.
-            </span>
+        <div class="text-md text-secondary leading-8 italic md:w-3/4">
+            I'm a backend developer with over 4 years of experience in building and managing PHP applications using Magento, WordPress, Symfony and Laravel.
         </div>
-        <div class="flex flex-col md:flex-row gap-4 font-sans">
+        <div class="flex flex-col md:flex-row gap-4">
             <a href="{{ route('contact') }}" class="flex space-x-2 w-40 justify-center py-4 bg-accent text-dark rounded">
                 <x-coolicon-mail class="h-5 w-5 text-dark" stroke="currentColor" fill="none" viewBox="0 0 24 24" />
                 <span class="font-bold uppercase text-sm">
