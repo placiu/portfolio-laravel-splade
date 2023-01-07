@@ -30,7 +30,7 @@
     ];
 @endphp
 <x-layout>
-    <div class="flex flex-col w-full h-full justify-center space-y-10">
+    <x-content>
         <x-header text="My Stack"/>
         <div class="flex flex-col space-y-2 font-sans text-secondary">
             @foreach ($skills as $name => $progress)
@@ -51,5 +51,5 @@
                 </a>
             @endforeach
         </div>
-    </div>
+    </x-content>
 </x-layout>

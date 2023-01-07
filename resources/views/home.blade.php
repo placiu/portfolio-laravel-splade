@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="flex flex-col w-full h-full justify-center space-y-14">
+    <x-content>
         <div class="flex flex-col space-y-4 font-sans font-extrabold">
             <span class="text-6xl md:text-7xl">
                 Paweł Płatek.
@@ -27,5 +27,5 @@
                 </span>
             </a>
         </div>
-    </div>
+    </x-content>
 </x-layout>

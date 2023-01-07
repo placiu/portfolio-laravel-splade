@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="flex flex-col w-full h-full justify-center space-y-14">
+    <x-content>
         <x-header text="About Me"/>
         <div class="font-sans">
             <div class="flex flex-col space-y-6 text-secondary leading-8 md:w-3/4 italic text-sm md:text-base">
@@ -22,5 +22,5 @@
                 </span>
             </a>
         </div>
-    </div>
+    </x-content>
 </x-layout>

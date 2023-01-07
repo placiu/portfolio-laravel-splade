@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="flex flex-col w-full h-full space-y-10">
+    <x-content>
         <x-header text="Get In Touch"/>
         <div class="">
             <div class="flex flex-col space-y-6 text-secondary w-10/12 md:w-3/4 leading-8 italic text-sm ">
@@ -54,5 +54,5 @@
                 </div>
             </x-splade-form>
         </div>
-    </div>
+    </x-content>
 </x-layout>
