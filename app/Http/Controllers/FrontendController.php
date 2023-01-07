@@ -24,7 +24,7 @@ class FrontendController extends Controller
                 Mail::to(env('MAIL_USERNAME'))->send(new Contact($formData));
                 Toast::title('Thank You!')
                     ->message('Your message has been succesfully send.')
-                    ->info()
+                    ->success()
                     ->centerBottom()
                     ->backdrop()
                     ->autoDismiss(5);

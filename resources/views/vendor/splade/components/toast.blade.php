@@ -3,7 +3,7 @@
         <x-splade-component is="transition" child after-leave="toast.emitDismiss">
             <div @class([
                 'p-4 pointer-events-auto border-l-4 shadow-md min-w-[240px]',
-                'bg-green-50 border-green-400' => $isSuccess,
+                'bg-green-50 border-accent' => $isSuccess,
                 'bg-yellow-50 border-yellow-400' => $isWarning,
                 'bg-red-50 border-red-400' => $isDanger,
                 'bg-blue-50 border-blue-400' => $isInfo,
@@ -11,7 +11,7 @@
                 <div class="flex">
                     <div class="flex-shrink-0">
                         @if($isSuccess)
-                            <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <svg class="h-5 w-5 text-accent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
                         @elseif($isWarning)
@@ -31,7 +31,7 @@
                     <div class="ml-3 break-words">
                         <h3 @class([
                             'text-sm font-medium',
-                            'text-green-800' => $isSuccess,
+                            'text-accent' => $isSuccess,
                             'text-orange-800' => $isWarning,
                             'text-red-800' => $isDanger,
                             'text-blue-800' => $isInfo,
@@ -42,7 +42,7 @@
                         @if($title && $message)
                             <div @class([
                                 'mt-2 text-sm',
-                                'text-green-700' => $isSuccess,
+                                'text-dark' => $isSuccess,
                                 'text-orange-700' => $isWarning,
                                 'text-red-700' => $isDanger,
                                 'text-blue-700' => $isInfo,
@@ -56,7 +56,7 @@
                         <div class="-mx-1.5 -my-1.5">
                             <button type="button" @click.prevent="toast.setShow(false)" @class([
                                 'inline-flex rounded-md p-1.5 focus:outline-none focus:ring-2 focus:ring-offset-2',
-                                'bg-green-50 text-green-500 hover:bg-green-100 focus:ring-offset-green-50 focus:ring-green-600' => $isSuccess,
+                                'bg-primary text-accent hover:bg-accent hover:text-primary focus:ring-offset-accent focus:ring-accent' => $isSuccess,
                                 'bg-orange-50 text-orange-500 hover:bg-orange-100 focus:ring-offset-orange-50 focus:ring-orange-600' => $isWarning,
                                 'bg-red-50 text-red-500 hover:bg-red-100 focus:ring-offset-red-50 focus:ring-red-600' => $isDanger,
                                 'bg-blue-50 text-blue-500 hover:bg-blue-100 focus:ring-offset-blue-50 focus:ring-blue-600' => $isInfo,
