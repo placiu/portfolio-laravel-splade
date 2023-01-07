@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* change bg & text color of autofilled inputs */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #061A23 inset !important;
+    -webkit-text-fill-color: #8892AF !important;
+  }
