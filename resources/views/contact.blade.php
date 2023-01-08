@@ -6,7 +6,7 @@
                 Use the form below or email me directly at <x-link href="mailto:{{ env('MAIL_USERNAME') }}">{{ env('MAIL_USERNAME') }}</x-link>
             </x-paragraph>
         </div>
-        <x-splade-form action="{{ route('contact') }}" class="flex flex-col gap-2 w-11/12 lg:w-9/12">
+        <x-splade-form action="{{ route('contact') }}" class="flex flex-col gap-2 w-11/12 lg:w-9/12 pb-12">
             <x-form.row class="md:flex-row">
                 <x-form.input-wrapper class="md:w-1/2">
                     <x-form.input-text v-model="form.first_name" placeholder="First Name *" />
