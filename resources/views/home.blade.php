@@ -20,7 +20,7 @@
                 </x-slot:icon>
                 Contact
             </x-buttons.link-fill>
-            <x-buttons.link-outline href="">
+            <x-buttons.link-outline href="{{ route('resume') }}">
                 <x-slot:icon>
                     <x-coolicon-download class="h-4 w-4" />
                 </x-slot:icon>

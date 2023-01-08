@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 use ProtoneMedia\Splade\Facades\Toast;
 
 class FrontendController extends Controller
@@ -40,5 +41,10 @@ class FrontendController extends Controller
         }
         
         return view('contact');
+    }
+
+    public function resume()
+    {
+        return Storage::download('cv_pawel_platek.pdf');
     }
 }

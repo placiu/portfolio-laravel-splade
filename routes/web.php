@@ -20,7 +20,8 @@ Route::middleware(['splade'])->group(function () {
     Route::get('/skills', fn () => view('skills'))->name('skills');
     Route::get('/sandbox', fn () => view('sandbox'))->name('sandbox');
     Route::match(['get', 'post'], '/contact', [FrontendController::class, 'contact'])->name('contact');
-
+    Route::get('/resume', [FrontendController::class, 'resume'])->name('resume');
+    
     // Registers routes to support Table Bulk Actions and Exports...
     Route::spladeTable();
 
