@@ -38,7 +38,7 @@
             <div class="flex justify-end">
                 <x-buttons.button-fill type="submit">
                     <x-slot:icon>
-                        <x-coolicon-mail class="h-4 w-4" />
+                        <x-icons.mail class="h-4 w-4" />
                     </x-slot:icon>
                     Send
                 </x-buttons.button-fill>
