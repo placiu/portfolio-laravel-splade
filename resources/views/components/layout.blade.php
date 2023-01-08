@@ -1,7 +1,7 @@
 <div class="flex flex-col justify-between min-h-screen w-full">
-    <x-navigation />
+    <x-navigation.navigation />
 
-    <main class="container flex grow mx-auto py-12 px-8 md:px-24 lg:px-48">
+    <main class="container flex grow mx-auto px-8 md:px-24 lg:px-48 py-12">
         {{ $slot }}
     </main>
 

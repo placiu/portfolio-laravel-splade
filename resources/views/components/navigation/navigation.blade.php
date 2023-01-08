@@ -10,26 +10,26 @@
             </div>
 
             <!-- Navigation Links -->
-            <div class="hidden space-x-4 sm:-my-px sm:ml-10 sm:flex">
-                <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+            <div class="hidden space-x-2 sm:-my-px sm:ml-10 sm:flex">
+                <x-navigation.nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
                     {{ __('Home') }}
-                </x-nav-link>
+                </x-navigation.nav-link>
 
-                <x-nav-link href="{{ route('about') }}" :active="request()->routeIs('about')">
-                    {{ __('About Me') }}
-                </x-nav-link>
+                <x-navigation.nav-link href="{{ route('about') }}" :active="request()->routeIs('about')">
+                    {{ __('About') }}
+                </x-navigation.nav-link>
 
-                <x-nav-link href="{{ route('skills') }}" :active="request()->routeIs('skills')">
+                <x-navigation.nav-link href="{{ route('skills') }}" :active="request()->routeIs('skills')">
                     {{ __('Skills') }}
-                </x-nav-link>
+                </x-navigation.nav-link>
 
-                <x-nav-link href="{{ route('sandbox') }}" :active="request()->routeIs('sandbox')">
+                <x-navigation.nav-link href="{{ route('sandbox') }}" :active="request()->routeIs('sandbox')">
                     {{ __('Sandbox') }}
-                </x-nav-link>
+                </x-navigation.nav-link>
 
-                <x-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
+                <x-navigation.nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
                     {{ __('Contact') }}
-                </x-nav-link>
+                </x-navigation.nav-link>
             </div>
 
             <!-- Hamburger -->
@@ -44,25 +44,25 @@
         <!-- Responsive Navigation Menu -->
         <div v-bind:class="{'block': data.open, 'hidden': ! data.open }" class="sm:hidden absolute top-16 right-0 w-full h-full z-10">
             <div class="flex flex-col justify-center pt-2 pb-10 space-y-1 bg-dark border-b-4 border-accent">
-                <x-responsive-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+                <x-navigation.nav-link-responsive href="{{ route('home') }}" :active="request()->routeIs('home')">
                     {{ __('Home') }}
-                </x-responsive-nav-link>
+                </x-navigation.nav-link-responsive>
 
-                <x-responsive-nav-link href="{{ route('about') }}" :active="request()->routeIs('about')">
-                    {{ __('About Me') }}
-                </x-responsive-nav-link>
+                <x-navigation.nav-link-responsive href="{{ route('about') }}" :active="request()->routeIs('about')">
+                    {{ __('About') }}
+                </x-navigation.nav-link-responsive>
 
-                <x-responsive-nav-link href="{{ route('skills') }}" :active="request()->routeIs('skills')">
+                <x-navigation.nav-link-responsive href="{{ route('skills') }}" :active="request()->routeIs('skills')">
                     {{ __('Skills') }}
-                </x-responsive-nav-link>
+                </x-navigation.nav-link-responsive>
 
-                <x-responsive-nav-link href="{{ route('sandbox') }}" :active="request()->routeIs('sandbox')">
+                <x-navigation.nav-link-responsive href="{{ route('sandbox') }}" :active="request()->routeIs('sandbox')">
                     {{ __('Sandbox') }}
-                </x-responsive-nav-link>
+                </x-navigation.nav-link-responsive>
 
-                <x-responsive-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
+                <x-navigation.nav-link-responsive href="{{ route('contact') }}" :active="request()->routeIs('contact')">
                     {{ __('Contact') }}
-                </x-responsive-nav-link>
+                </x-navigation.nav-link-responsive>
             </div>
         </div>
     </nav>

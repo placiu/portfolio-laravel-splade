@@ -21,13 +21,13 @@ class FrontendController extends Controller
             ]);
 
             try {
-                // Mail::to(env('MAIL_USERNAME'))->send(new Contact($formData));
+                Mail::to(env('MAIL_USERNAME'))->send(new Contact($formData));
                 Toast::title('Thank You!')
                     ->message('I will reply to Your message ASAP.')
                     ->success()
                     ->rightBottom()
                     ->backdrop()
-                    ->autoDismiss(3);
+                    ->autoDismiss(5);
             } 
             catch (\Exception $e) {
                 Toast::title('Error!')

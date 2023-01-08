@@ -1,0 +1,1 @@
+<textarea {{ $attributes }} class="bg-dark text-secondary font-mono w-full h-52 max-h-56 resize-none border-dark focus:border-dark focus:ring-0"></textarea>

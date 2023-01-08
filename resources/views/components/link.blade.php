@@ -1,3 +1,3 @@
-<a {{ $attributes }} class="text-accent">
+<a {{ $attributes }} class="text-accent hover:underline">
     {{ $slot }}
 </a>

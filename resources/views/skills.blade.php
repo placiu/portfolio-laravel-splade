@@ -1,11 +1,11 @@
 @php
     $skills = [
-        'PHP' => 'w-8/12',
-        'MySQL' => 'w-6/12',
-        'HTML' => 'w-8/12',
-        'CSS' => 'w-6/12',
-        'JS' => 'w-4/12',
-        'GIT' => 'w-7/12',
+        'PHP' => 8,
+        'MySQL' => 6,
+        'HTML' => 8,
+        'CSS' => 6,
+        'JS' => 4,
+        'GIT' => 7,
     ];
 
     $softwares = [
@@ -13,38 +13,29 @@
         ['name' => 'Symfony', 'url' => 'https://symfony.com/'],
         ['name' => 'WordPress', 'url' => 'https://wordpress.com/'],
         ['name' => 'Magento', 'url' => 'https://magento.com/'],
-        ['name' => 'Livewire', 'url' => ''],
+        ['name' => 'Livewire', 'url' => 'https://laravel-livewire.com/'],
         ['name' => 'Vue', 'url' => 'http://vuejs.org/'],
-        ['name' => 'AlpineJS', 'url' => ''],
-        ['name' => 'InertiaJS', 'url' => ''],
-        ['name' => 'Splade', 'url' => ''],
-        ['name' => 'Tailwind CSS', 'url' => ''],
-        ['name' => 'Github', 'url' => ''],
-        ['name' => 'Gitlab', 'url' => ''],
-        ['name' => 'Trello', 'url' => ''],
-        ['name' => 'Jira', 'url' => ''],
-        ['name' => 'Asana', 'url' => ''],
-        ['name' => 'Buddy.works', 'url' => ''],
-        ['name' => 'macOS', 'url' => ''],
-        ['name' => 'Ubuntu', 'url' => ''],
+        ['name' => 'AlpineJS', 'url' => 'https://alpinejs.dev/'],
+        ['name' => 'InertiaJS', 'url' => 'https://inertiajs.com/'],
+        ['name' => 'Splade', 'url' => 'https://splade.dev/'],
+        ['name' => 'Tailwind CSS', 'url' => 'https://tailwindcss.com/'],
+        ['name' => 'Buddy.works', 'url' => 'https://buddy.works/'],
+        ['name' => 'macOS', 'url' => 'https://www.apple.com/pl/macos/'],
+        ['name' => 'Ubuntu', 'url' => 'https://ubuntu.com/'],
     ];
 @endphp
 <x-layout>
     <x-content>
-        <x-header text="My Stack"/>
-        <div class="flex flex-col space-y-2 font-sans text-secondary">
+        <x-header text="My Stack" />
+        <div class="flex flex-col space-y-2 w-10/12">
             @foreach ($skills as $name => $progress)
-                <div class="flex relative justify-end w-3/4">
-                    <span class="absolute top-[6px] left-0 h-[19px] flex w-11/12 bg-darker"></span>
-                    <span class="absolute top-[6px] left-0 h-[19px] flex {{ $progress }} bg-accent"></span>
-                    <span class="flex w-1/12 font-extrabold text-2xl pl-2">{{ $name }}</span>
-                </div>
+                <x-progress-bar title="{{ $name }}" value="{{ $progress }}" />
             @endforeach
         </div>
-        <x-header text="Software & Frameworks"/>
-        <div class="flex gap-2 md:gap-4 font-sans text-accent flex-wrap">
+        <x-header text="Software & Frameworks" />
+        <div class="flex flex-wrap gap-2 md:gap-4 w-11/12">
             @foreach ($softwares as $software)
-                <x-buttons.link-outline href="{{ $software['url'] }}">
+                <x-buttons.link-outline href="{{ $software['url'] }}" target="_blank">
                     {{ $software['name']}}
                 </x-buttons.link-outline>
             @endforeach
