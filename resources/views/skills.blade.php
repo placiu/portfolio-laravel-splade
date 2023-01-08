@@ -29,7 +29,7 @@
         <x-header text="My Stack" />
         <div class="flex flex-col space-y-2 w-10/12">
             @foreach ($skills as $name => $progress)
-                <x-progress-bar title="{{ $name }}" value="{{ $progress }}" />
+                <x-progress-bar title="{{ $name }}" progress="{{ $progress }}" />
             @endforeach
         </div>
         <x-header text="Software & Frameworks" />
