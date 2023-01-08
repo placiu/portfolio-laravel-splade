@@ -56,7 +56,7 @@
                         <div class="-mx-1.5 -my-1.5">
                             <button type="button" @click.prevent="toast.setShow(false)" @class([
                                 'inline-flex rounded-md p-1.5 focus:outline-none focus:ring-2 focus:ring-offset-2',
-                                'bg-primary text-accent hover:bg-accent hover:text-primary focus:ring-offset-accent focus:ring-accent' => $isSuccess,
+                                'text-accent hover:bg-accent hover:text-primary focus:ring-offset-accent focus:ring-accent' => $isSuccess,
                                 'bg-orange-50 text-orange-500 hover:bg-orange-100 focus:ring-offset-orange-50 focus:ring-orange-600' => $isWarning,
                                 'bg-red-50 text-red-500 hover:bg-red-100 focus:ring-offset-red-50 focus:ring-red-600' => $isDanger,
                                 'bg-blue-50 text-blue-500 hover:bg-blue-100 focus:ring-offset-blue-50 focus:ring-blue-600' => $isInfo,
