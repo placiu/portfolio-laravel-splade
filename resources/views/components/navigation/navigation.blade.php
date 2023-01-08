@@ -35,8 +35,8 @@
             <!-- Hamburger -->
             <div class="-mr-2 flex items-center sm:hidden">
                 <button @click="data.open = ! data.open" class="inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-primary hover:bg-darker focus:outline-none focus:bg-darker focus:primary transition">
-                    <x-icons.hamburger v-bind:class="{'hidden': data.open, 'inline-flex': ! data.open }" class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" />
-                    <x-icons.close v-bind:class="{'hidden': ! data.open, 'inline-flex': data.open }" class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" />
+                    <x-icons.hamburger v-bind:class="{'hidden': data.open, 'inline-flex w-6 h-6': ! data.open }" />
+                    <x-icons.close v-bind:class="{'hidden': ! data.open, 'inline-flex w-6 h-6': data.open }" />
                 </button>
             </div>
         </div>
