@@ -1,1 +1,1 @@
-<span class="text-primary font-cursive text-2xl">placiu.dev</span>
+<span class="text-primary font-cursive text-2xl">platek.dev</span>
