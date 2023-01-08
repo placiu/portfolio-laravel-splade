@@ -1,10 +1,8 @@
 <x-layout>
     <x-content>
         <x-header text="Get In Touch"/>
-        <div class="">
-            <div class="flex flex-col space-y-6 text-secondary w-10/12 md:w-3/4 leading-8 italic text-sm ">
-                <p>Use the form below or email me directly at <a href="mailto:pawel@platek.dev" class="text-accent">pawel@platek.dev</a></p>
-            </div>
+        <div class="flex w-10/12 md:w-3/4">
+            <x-paragraph>Use the form below or email me directly at <x-link href="mailto:pawel@platek.dev">pawel@platek.dev</x-link></x-paragraph>
         </div>
         <div class="">
             <x-splade-form action="{{ route('contact') }}" class="flex flex-col space-y-4 w-10/12 md:w-7/12">
