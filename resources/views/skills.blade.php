@@ -44,11 +44,9 @@
         <x-header text="Software & Frameworks"/>
         <div class="flex gap-2 md:gap-4 font-sans text-accent flex-wrap">
             @foreach ($softwares as $software)
-                <a href="{{ $software['url'] }}" class="flex w-32 justify-center md:w-auto md:px-4 py-3 bg-dark border-2 border-accent text-accent rounded-md hover:bg-accent hover:text-dark">
-                    <span class="font-bold uppercase text-sm">
-                        {{ $software['name']}}
-                    </span>
-                </a>
+                <x-buttons.link-outline href="{{ $software['url'] }}">
+                    {{ $software['name']}}
+                </x-buttons.link-outline>
             @endforeach
         </div>
     </x-content>

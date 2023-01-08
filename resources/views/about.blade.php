@@ -9,18 +9,18 @@
             </div>
         </div>
         <div class="flex flex-col md:flex-row gap-4 font-sans">
-            <a href="{{ route('contact') }}" class="flex space-x-2 w-40 justify-center py-4 bg-dark border border-accent text-accent rounded">
-                <x-coolicon-mail class="h-5 w-5 text-accent" stroke="currentColor" fill="none" viewBox="0 0 24 24" />
-                <span class="font-bold uppercase text-sm">
-                    Contact
-                </span>
-            </a>
-            <a href="" class="flex space-x-2 w-40 justify-center py-4 bg-dark border border-accent text-accent rounded">
-                <x-coolicon-download class="h-5 w-5 text-accent" stroke="currentColor" fill="none" viewBox="0 0 24 24" />
-                <span class="font-bold uppercase text-sm">
-                    Resume
-                </span>
-            </a>
+            <x-buttons.link-outline href="{{ route('contact') }}">
+                <x-slot:icon>
+                    <x-coolicon-mail class="h-5 w-5 fill-current" viewBox="0 0 24 24" />
+                </x-slot:icon>
+                Contact
+            </x-buttons.link-outline>
+            <x-buttons.link-outline href="">
+                <x-slot:icon>
+                    <x-coolicon-download class="h-5 w-5 fill-current" viewBox="0 0 24 24" />
+                </x-slot:icon>
+                Resume
+            </x-buttons.link-outline>
         </div>
     </x-content>
 </x-layout>

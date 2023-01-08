@@ -45,12 +45,12 @@
                     </div>
                 </div>
                 <div class="flex space-x-4 justify-end">
-                    <button type="submit" class="flex space-x-2 px-6 py-4 bg-accent text-dark rounded">
-                        <x-coolicon-mail class="h-5 w-5 text-dark" stroke="currentColor" fill="none" viewBox="0 0 24 24" />
-                        <span class="font-bold uppercase text-sm">
-                            Send
-                        </span>
-                    </button>
+                    <x-buttons.button-fill type="submit">
+                        <x-slot:icon>
+                            <x-coolicon-mail class="h-5 w-5 fill-current" viewBox="0 0 24 24" />
+                        </x-slot:icon>
+                        Send
+                    </x-buttons.button-fill>
                 </div>
             </x-splade-form>
         </div>
