@@ -7,3 +7,9 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px #06373A inset !important;
     -webkit-text-fill-color: #8892AF !important;
   }
+
+@media (min-width: 768px) {
+  .page-center {
+    height: calc(100vh - 55vh);
+  }
+}
