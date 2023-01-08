@@ -47,7 +47,7 @@
                 <div class="flex space-x-4 justify-end">
                     <x-buttons.button-fill type="submit">
                         <x-slot:icon>
-                            <x-coolicon-mail class="h-5 w-5 fill-current" viewBox="0 0 24 24" />
+                            <x-coolicon-mail class="h-4 w-4" />
                         </x-slot:icon>
                         Send
                     </x-buttons.button-fill>

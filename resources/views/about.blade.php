@@ -11,13 +11,13 @@
         <div class="flex flex-col md:flex-row gap-4 font-sans">
             <x-buttons.link-outline href="{{ route('contact') }}">
                 <x-slot:icon>
-                    <x-coolicon-mail class="h-5 w-5 fill-current" viewBox="0 0 24 24" />
+                    <x-coolicon-mail class="h-4 w-4" />
                 </x-slot:icon>
                 Contact
             </x-buttons.link-outline>
             <x-buttons.link-outline href="">
                 <x-slot:icon>
-                    <x-coolicon-download class="h-5 w-5 fill-current" viewBox="0 0 24 24" />
+                    <x-coolicon-download class="h-4 w-4" />
                 </x-slot:icon>
                 Resume
             </x-buttons.link-outline>
