@@ -5,7 +5,7 @@
         'HTML' => 8,
         'CSS' => 6,
         'JS' => 4,
-        'GIT' => 7,
+        'GIT' => 6,
     ];
 
     $softwares = [
