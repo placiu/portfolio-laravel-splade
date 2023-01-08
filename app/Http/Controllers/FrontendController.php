@@ -10,6 +10,31 @@ use ProtoneMedia\Splade\Facades\Toast;
 
 class FrontendController extends Controller
 {
+    public function home()
+    {
+        return view('home');
+    }
+
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function skills()
+    {
+        return view('skills');
+    }
+
+    public function sandbox()
+    {
+        return view('sandbox');
+    }
+
+    public function resume()
+    {
+        return Storage::download('cv_pawel_platek.pdf');
+    }
+
     public function contact(Request $request)
     {
         if ($request->isMethod('post')) {
@@ -41,10 +66,5 @@ class FrontendController extends Controller
         }
         
         return view('contact');
-    }
-
-    public function resume()
-    {
-        return Storage::download('cv_pawel_platek.pdf');
     }
 }
