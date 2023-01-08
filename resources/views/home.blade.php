@@ -8,7 +8,7 @@
                 I build things with PHP
             </span>
         </div>
-        <div class="flex w-11/12">
+        <div class="flex w-11/12 lg:w-9/12">
             <x-paragraph>
             I'm a backend developer with over 4 years of experience in building and managing PHP applications using Magento, WordPress, Symfony and Laravel.
             </x-paragraph>
