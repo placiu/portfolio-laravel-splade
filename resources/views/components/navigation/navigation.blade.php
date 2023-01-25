@@ -23,9 +23,9 @@
                     {{ __('Skills') }}
                 </x-navigation.nav-link>
 
-                <x-navigation.nav-link href="{{ route('sandbox') }}" :active="request()->routeIs('sandbox')">
+                <!-- <x-navigation.nav-link href="{{ route('sandbox') }}" :active="request()->routeIs('sandbox')">
                     {{ __('Sandbox') }}
-                </x-navigation.nav-link>
+                </x-navigation.nav-link> -->
 
                 <x-navigation.nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
                     {{ __('Contact') }}
